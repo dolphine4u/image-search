@@ -1,0 +1,45 @@
+@import '../../styles/_config.scss';
+@import '../../styles/_mixins.scss';
+
+
+.Home-background {
+  background-color: $color-black;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+
+.Home-foreground,
+.Home-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .Home-foreground { height: 300%; top: -100%; }
+}
+
+.Home-wrapper{
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.Home-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $spacer-lg;
+}
+
+.Home-content {
+  @include wrapper(800px);
+  text-align: center;
+}
+

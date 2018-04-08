@@ -1,0 +1,53 @@
+@import '_config.scss';
+@import '_mixins.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+  word-wrap: break-word;
+}
+
+html {
+  font-size: 100%;
+  font-family: $font-family;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-base;
+  font-family: $font-family;
+  font-weight: 400;
+  text-align: left;
+  background-color: #f8fafd;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.Site {
+  height: 100%;
+  width: 100%;
+}

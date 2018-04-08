@@ -1,0 +1,39 @@
+@import '../../styles/_config.scss';
+@import '../../styles/_mixins.scss';
+
+.Search {
+  width: 100%;
+  height: 100%;
+}
+
+.Search-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Search-wrapper{
+  background-image: url("background/home-bg.jpg");
+  background-attachment:fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.Search-content {
+  @include wrapper;
+  padding-top: 8rem;
+  padding-bottom: $spacer;
+}
+
+.Search-errorMessage {
+  color: $color-white;
+  font-size: rem(18px);
+  text-align: center;
+  margin: 4rem 2rem;
+
+  @include from-medium {
+    font-size: rem(36px);
+  }
+}

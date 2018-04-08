@@ -1,0 +1,66 @@
+@import '../../styles/_config.scss';
+@import '../../styles/_mixins.scss';
+
+
+.Asset-header{
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 1;
+}
+
+.Asset-content {
+  @include wrapper;
+  padding: 0;
+
+  @include from-medium {
+    padding: 8rem $spacer;
+  }
+}
+.Asset-image {
+  display: block;
+  width: 100%;
+
+  margin: 0 0 $spacer;
+  background: $color-white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  @include from-medium {
+    padding: $spacer;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.Asset-data {
+  display: block;
+  width: 100%;
+  padding: $spacer;
+
+  @include from-medium {
+    margin-top: $spacer;
+    padding: $spacer-sm;
+    vertical-align: top;
+  }
+}
+
+.Asset-title {
+  margin-top: 0;
+  margin-bottom: $spacer-xs;
+  line-height: 1.4;
+}
+
+.Asset-description {
+  color: $color-gray-dark;
+}
+
+.Asset-meta {
+  margin-top: 0;
+  margin-bottom: $spacer-lg;
+  font-size: rem(14px);
+  font-weight: 600;
+  color: $color-gray-light;
+}
