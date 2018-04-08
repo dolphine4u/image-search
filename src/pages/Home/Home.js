@@ -17,7 +17,7 @@ export class Home extends React.Component {
       <div>
         <div className="Home-background">
           <div className="Home-foreground">
-            <iframe src="https://www.youtube.com/embed/EaM9kDPa_AY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=EaM9kDPa_AY" frameborder="0" title="Nasa" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/EaM9kDPa_AY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&playlist=EaM9kDPa_AY" title="Nasa" ></iframe>
           </div>
         </div>
         <div className="Home-wrapper">
